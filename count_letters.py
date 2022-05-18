@@ -7,6 +7,8 @@ def count_letters(string):
     new_dictionary = {}
     string = string.upper()
     for attribute in string:
+        if ord(attribute) <65 or ord(attribute)>90 :
+            continue
         if attribute in new_dictionary:
             new_dictionary[attribute] = new_dictionary[attribute]+1
         else:
